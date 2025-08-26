@@ -29,35 +29,67 @@
             <span class=" w-full h-px bg-white/35"></span>
         </div>
         <section class="sm:h-24 ">
-            <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " />
-            <label for="btn-open"
-                class="btn__label relative w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
-                aria-label="open and close menu Mobile">
-                <span
-                    class=" line top  w-full h-1 bg-blue-300 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
-                <span
-                    class=" line middle  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45]"></span>
-                <span
-                    class="line bottom  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
-            </label>
-            <nav
-                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out peer-checked:translate-0 peer-checked:w-64 peer-checked:h-dvh md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
+            <button id="btn__menu" type="menu"
+                class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
+                aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
+                <span class="line  w-full h-1 bg-blue-300 rounded  "></span>
+                <span class="line  w-full h-1 bg-blue-300  rounded  "></span>
+                <span class="line  w-full h-1 bg-blue-300  rounded "></span>
+            </button>
+            <nav id="main__nav"
+                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
                 <ul
                     class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 ">
+
                     <li class="menu__bar ">
-                        <a href="./index.html"  class=" text__menu flex "><span class="text__number md:hidden xl:flex ">00</span> home</a>
+                        <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span
+                                class="text__number  ">00</span>
+                            home</a>
                     </li>
-                    <li class="menu__bar ">
-                        <a href="./destination-europa.html" target="_blank" aria-current="page" class=" text__menu "><span class="text__number">01</span> Destination</a>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
+                                class="text__number">01</span> Destination</a>
                     </li>
-                    <li class="menu__bar ">
-                        <a href="./crew-commander.html" target="_blank"  class="text__menu " ><span class="text__number">02</span> Crew</a>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span
+                                class="text__number">02</span> Crew</a>
                     </li>
-                    <li class="menu__bar ">
-                        <a href="./technology-vehicle.html" target="_blank"  class="text__menu " ><span class="text__number">03</span> Technology</a>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
+                                class="text__number">03</span> Technology</a>
                     </li>
                 </ul>
             </nav>
+
+            <!-- <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " /> -->
+            <!-- <label for="btn-open" -->
+            <!--     class="btn__label relative w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 " -->
+            <!--     aria-label="open and close menu Mobile"> -->
+            <!--     <span -->
+            <!--         class=" line top  w-full h-1 bg-blue-300 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span> -->
+            <!--     <span -->
+            <!--         class=" line middle  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45]"></span> -->
+            <!--     <span -->
+            <!--         class="line bottom  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span> -->
+            <!-- </label> -->
+            <!-- <nav -->
+            <!--     class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out peer-checked:translate-0 peer-checked:w-64 peer-checked:h-dvh md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 "> -->
+            <!--     <ul -->
+            <!--         class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 "> -->
+            <!--         <li class="menu__bar "> -->
+            <!--             <a href="./index.html"  class=" text__menu flex "><span class="text__number md:hidden xl:flex ">00</span> home</a> -->
+            <!--         </li> -->
+            <!--         <li class="menu__bar "> -->
+            <!--             <a href="./destination-europa.html" target="_blank" aria-current="page" class=" text__menu "><span class="text__number">01</span> Destination</a> -->
+            <!--         </li> -->
+            <!--         <li class="menu__bar "> -->
+            <!--             <a href="./crew-commander.html" target="_blank"  class="text__menu " ><span class="text__number">02</span> Crew</a> -->
+            <!--         </li> -->
+            <!--         <li class="menu__bar "> -->
+            <!--             <a href="./technology-vehicle.html" target="_blank"  class="text__menu " ><span class="text__number">03</span> Technology</a> -->
+            <!--         </li> -->
+            <!--     </ul> -->
+            <!-- </nav> -->
         </section>
     </header>
     <main

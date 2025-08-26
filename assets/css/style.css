@@ -1041,12 +1041,6 @@ body {
   transition: .5s ease-in-out;
   transform-origin: left;
 }
-.btn__label:focus-visible {
-  .line {
-    border: 1px solid #fff;
-    box-shadow: 0 0 0 1px #242a45;
-  }
-}
 #btn-open:checked~label .top {
   transform: rotate(45deg);
   width: var(--x-width);

@@ -18,6 +18,13 @@ btnMenu.addEventListener('click', () => {
         lineButton[0].classList.add('top-1');
         lineButton[1].classList.add('middle-1');
         lineButton[2].classList.add('bottom-1');
-
     }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && btnMenu.getAttribute('aria-expanded') === 'true') {
+            btnMenu.click();
+        }
+    });
+
+
 });
