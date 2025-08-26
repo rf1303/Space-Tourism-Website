@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/main.js" defer></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body
+    class="h-dvh  bg-[url(/assets/images/destination/background-destination-mobile.jpg)] sm:bg-[url(/assets/images/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/images/destination/background-destination-desktop.jpg)] bg-cover bg-center bg-no-repeat ">
+    <header class=" relative p-6 flex justify-between items-center sm:pt-0 sm:pl-10 sm:pr-0 xl:mt-10 xl:pl-16">
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                class="w-10 h-10 sm:w-12 sm:h-12">
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="24" cy="24" r="24" fill="#FFF" />
+                    <path fill="#0B0D17"
+                        d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+                </g>
+            </svg>
+        </div>
+        <div class="hidden w-full xl:flex xl:translate-x-14 items-center justify-center z-50">
+            <span class=" w-full h-px bg-white/35"></span>
+        </div>
+        <section class="sm:h-24 ">
+            <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " />
+            <label for="btn-open"
+                class="btn__label relative w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
+                aria-label="open and close menu Mobile">
+                <span
+                    class=" line top  w-full h-1 bg-blue-300 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
+                <span
+                    class=" line middle  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45]"></span>
+                <span
+                    class="line bottom  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
+            </label>
+            <nav
+                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out peer-checked:translate-0 peer-checked:w-64 peer-checked:h-dvh md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
+                <ul
+                    class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 ">
+
+                    <li class="menu__bar ">
+                        <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span class="text__number  ">00</span>
+                            home</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
+                                class="text__number">01</span> Destination</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span
+                                class="text__number">02</span> Crew</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
+                                class="text__number">03</span> Technology</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main
+        class="w-clampDestination py-10 mx-auto grid gap-8 items-center justify-items-center xl:w-[69.375rem] xl:h-[49.5rem] xl:p-0 xl:grid-cols-[repeat(2,33.688rem)]">
+        <header class="w-full flex flex-col gap-6 xl:h-full">
+            <h2
+                class="text-base text-white text-center tracking-[.15em] font-barlowCond  uppercase md:text-pick md:text-start xl:h-fit">
+                <span class="title__span">01</span> Pick your destination</h2>
+            <div class="w-full h-clampMoon flex items-center justify-center xl:h-full">
+                <picture class="">
+                    <source id="img__webp" src="./assets/images/destination/image-europa.webp" type="image/webp">
+                    <source id="img__png" src="./assets/images/destination/image-europa.png" type="image/png">
+                    <img src="./assets/images/destination/image-europa.png" alt="imagen europa"
+                        class="w-imgMoon object-contain xl:w-[30rem] aspect-square" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </header>
+        <section class="w-clampDestNav grid gap-6 xl:w-[27.813rem] ">
+            <ul class="peer flex items-center justify-around gap-8 md:justify-center xl:justify-start">
+                <li class="item__moon">
+                    <button class="text__moon" aria-selected="false">moon</button>
+                </li>
+                <li class="item__moon">
+                    <button class="text__moon" aria-selected="false">mars</button>
+                </li>
+                <li class="item__moon active " >
+                    <button class="text__moon" aria-selected="true">europa</button>
+                </li>
+                <li class="item__moon">
+                    <button class="text__moon" aria-selected="false">titan</button>
+                </li>
+            </ul>
+            <div class="grid gap-4 place-items-center xl:justify-items-start">
+                <h1 class="text-destMobTab/none text-white font-bellefair xl:text-destDesktop uppercase">europa</h1>
+                <p class="text-bxs/7 text-white text-center font-barlow">
+                    The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+                    winter lover’s dream. With an icy surface, it’s perfect for a bit of
+                    ice skating, curling, hockey, or simple relaxation in your snug
+                    wintery cabin.
+                </p>
+            </div>
+            <div class="w-full h-px bg-white/30 "></div>
+            <div class="flex flex-col gap-6 items-center justify-center md:flex-row md:w-full">
+                <div class="w-full grid gap-3 place-items-center xl:justify-items-start ">
+                    <span class="text-sm/none ltr-spc-3 text-blue-300 font-barlowCond uppercase">Avg. distance</span>
+                    <p class="text-destKm/none text-white font-bellefair uppercase">628 mil. km</p>
+                </div>
+                <div class="w-full grid gap-3 place-items-center xl:justify-items-start">
+                    <span class="text-sm/none ltr-spc-3 text-blue-300 font-barlowCond uppercase">Est. travel time</span>
+                    <p class="text-destKm/none text-white font-bellefair uppercase">3 years</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

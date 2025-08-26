@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/main.js" defer></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body
+    class="h-dvh  bg-[url(/assets/images/crew/background-crew-mobile.jpg)] sm:bg-url[(/assets/images/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/images/crew/background-crew-desktop.jpg)] bg-cover bg-center bg-no-repeat ">
+    <header class=" relative p-6 flex justify-between items-center sm:pt-0 sm:pl-10 sm:pr-0 xl:mt-10 xl:pl-16">
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                class="w-10 h-10 sm:w-12 sm:h-12">
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="24" cy="24" r="24" fill="#FFF" />
+                    <path fill="#0B0D17"
+                        d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+                </g>
+            </svg>
+        </div>
+        <div class="hidden w-full xl:flex xl:translate-x-14 items-center justify-center z-50">
+            <span class=" w-full h-px bg-white/35"></span>
+        </div>
+        <section class="sm:h-24 ">
+            <!-- <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " /> -->
+            <button id="btn__menu" type="menu"
+                class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
+                aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
+                <span
+                    class="line  w-full h-1 bg-blue-300 rounded  "></span>
+                <span
+                    class="line  w-full h-1 bg-blue-300  rounded  "></span>
+                <span
+                    class="line  w-full h-1 bg-blue-300  rounded "></span>
+            </button>
+            <nav id="main__nav"
+                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
+                <ul
+                    class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 ">
+
+                    <li class="menu__bar ">
+                        <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span
+                                class="text__number  ">00</span>
+                            home</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
+                                class="text__number">01</span> Destination</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span
+                                class="text__number">02</span> Crew</a>
+                    </li>
+                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                        <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
+                                class="text__number">03</span> Technology</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="">
+        <div class="flex items-center justify-center">
+            <ul class="peer flex items-center justify-between gap-4 w-22 " role="tablist">
+                <li class="item__dots">
+                    <button class="btn__dots" role="tab" aria-selected="false"><span class="sr-only">slide title</span></button>
+                </li>
+                <li class="item__dots">
+                    <button class="btn__dots" role="tab" aria-selected="false"><span class="sr-only">slide title</span></button>
+                </li>
+                <li class="item__dots ">
+                    <button class="btn__dots" role="tab" aria-selected="true"><span class="sr-only">slide title</span></button>
+                </li>
+                <li class="item__dots">
+                    <button class="btn__dots" role="tab" aria-selected="false"><span class="sr-only">slide title</span></button>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <!-- 02 Meet your crew -->
+    <!---->
+    <!-- Commander -->
+    <!-- Douglas Hurley -->
+    <!---->
+    <!-- Douglas Gerald Hurley is an American engineer, former Marine Corps pilot -->
+    <!-- and former NASA astronaut. He launched into space for the third time as -->
+    <!-- commander of Crew Dragon Demo-2. -->
+</body>
+
+</html>
