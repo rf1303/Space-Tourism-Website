@@ -14,7 +14,7 @@
 
 <body
     class="h-dvh  bg-[url(/assets/images/home/background-home-mobile.jpg)] sm:bg- url(/assets/images/home/background-home-tablet.jpg)] lg:bg-[url(/assets/images/home/background-home-desktop.jpg)] bg-cover bg-center bg-no-repeat ">
-    <header class=" relative p-6 flex justify-between items-center sm:pt-0 sm:pl-10 sm:pr-0 xl:mt-10 xl:pl-16">
+    <header class=" relative p-6 flex justify-between items-center sm:py-0 sm:pl-10 sm:pr-0 xl:mt-10 xl:pl-16">
         <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
                 class="w-10 h-10 sm:w-12 sm:h-12">
@@ -60,62 +60,33 @@
                     </li>
                 </ul>
             </nav>
-
-            <!-- <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " /> -->
-            <!-- <label for="btn-open" -->
-            <!--     class="btn__label relative w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 " -->
-            <!--     aria-label="open and close menu Mobile"> -->
-            <!--     <span -->
-            <!--         class=" line top  w-full h-1 bg-blue-300 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span> -->
-            <!--     <span -->
-            <!--         class=" line middle  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45]"></span> -->
-            <!--     <span -->
-            <!--         class="line bottom  w-full h-1 bg-blue-300  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span> -->
-            <!-- </label> -->
-            <!-- <nav -->
-            <!--     class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out peer-checked:translate-0 peer-checked:w-64 peer-checked:h-dvh md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 "> -->
-            <!--     <ul -->
-            <!--         class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 "> -->
-            <!--         <li class="menu__bar "> -->
-            <!--             <a href="./index.html"  class=" text__menu flex "><span class="text__number md:hidden xl:flex ">00</span> home</a> -->
-            <!--         </li> -->
-            <!--         <li class="menu__bar "> -->
-            <!--             <a href="./destination-europa.html" target="_blank" aria-current="page" class=" text__menu "><span class="text__number">01</span> Destination</a> -->
-            <!--         </li> -->
-            <!--         <li class="menu__bar "> -->
-            <!--             <a href="./crew-commander.html" target="_blank"  class="text__menu " ><span class="text__number">02</span> Crew</a> -->
-            <!--         </li> -->
-            <!--         <li class="menu__bar "> -->
-            <!--             <a href="./technology-vehicle.html" target="_blank"  class="text__menu " ><span class="text__number">03</span> Technology</a> -->
-            <!--         </li> -->
-            <!--     </ul> -->
-            <!-- </nav> -->
         </section>
     </header>
-    <main
-        class="w-clampMain h-mainMobile py-6 mx-auto   grid grid-cols-1 items-center justify-items-center sm:h-mainTablet xl:p-0  xl:h-mainDesktop xl:grid-cols-[repeat(2,_minmax(33.75rem,_1fr))] xl:justify-between xl:items-end">
-        <div class="flex flex-col justify-center items-center gap-6  xl:items-start ">
-            <h1 class="text-blue-300 text-homeTilte tracking-[15%] uppercase font-barlowCond">So, you want to travel to
-            </h1>
-            <h2 class=" h-fit text-white text-space/tight uppercase font-bellefair xl:leading-[125%]">Space</h2>
-            <p class=" text-blue-300 text-bxs/relaxed font-barlow text-center ">
-                Let’s face it; if you want to go to space, you might as well genuinely go to
-                outer space and not hover kind of on the edge of it. Well sit back, and relax
-                because we’ll give you a truly out of this world experience!
-            </p>
+    <main class="md:my-32">
+
+        <div
+            class="w-clampMain h-mainMobile py-6 mx-auto   grid grid-cols-1 items-center justify-items-center sm:h-mainTablet xl:p-0  xl:h-mainDesktop xl:gap-12 xl:grid-cols-[repeat(2,_minmax(0,33.75rem))] xl:justify-between xl:items-end">
+            <div
+                class="w-clampDestNav flex flex-col justify-center items-center gap-6  xl:items-start xl:w-[33.75rem] ">
+                <h1
+                    class="text-blue-300 text-homeTilte tracking-[15%] uppercase font-barlowCond text-center xl:text-start leading-[200%] ">
+                    So, you want to travel to
+                    <span
+                        class=" h-fit block text-white text-space/tight uppercase font-bellefair xl:leading-[115%]">Space</span>
+                </h1>
+                <p class=" text-blue-300 text-bxs/relaxed font-barlow text-center xl:text-lg leading-[180%] ">
+                    Let’s face it; if you want to go to space, you might as well genuinely go to
+                    outer space and not hover kind of on the edge of it. Well sit back, and relax
+                    because we’ll give you a truly out of this world experience!
+                </p>
+            </div>
+            <div class="w-full h-exploreXs sm:h-exploreSm grid items-center justify-items-center xl:justify-items-end ">
+                <a href="./destination-europa.html" target="_blank"
+                    class="relative z-0 p-9 aspect-square bg-blue-300 flex items-center justify-center rounded-full text-blue-900 text-explore uppercase font-bellefair md:w-exploreSm after:absolute after:content-[''] after:w-full after:h-full after:bg-white/20 after:rounded-full after:transition-transform after:duration-500 after:ease-in-out after:animate-spin hover:after:scale-150 focus:after:scale-150 ">
+                    Explore
+                </a>
+            </div>
         </div>
-        <div class="w-full h-exploreXs sm:h-exploreSm grid items-center justify-items-center xl:justify-items-end ">
-            <a href="./destination-europa.html" target="_blank"
-                class="relative z-0 p-9 aspect-square bg-blue-300 flex items-center justify-center rounded-full text-blue-900 text-explore uppercase font-bellefair after:absolute after:content-[''] after:w-full after:h-full after:bg-white/20 after:rounded-full after:transition-transform after:duration-500 after:ease-in-out after:animate-spin hover:after:scale-150 focus:after:scale-150 ">
-                Explore
-            </a>
-        </div>
-        <!-- <div class="w-full h-exploreXs sm:h-exploreSm grid items-center justify-items-center xl:justify-items-end "> -->
-        <!--     <a href="./destination-europa.html" target="_blank" -->
-        <!--         class="w-clampExplore h-clampExplore bg-blue-300 flex items-center justify-center rounded-full text-blue-900 text-explore uppercase font-bellefair  focus:outline-[4.5rem] focus:outline-gray-600/70"> -->
-        <!--         Explore -->
-        <!--     </a> -->
-        <!-- </div> -->
     </main>
 
 </body>

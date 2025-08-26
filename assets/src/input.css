@@ -70,6 +70,7 @@
     --text-destKm: 1.75rem;
     --text-pick: 1.25rem;
     --text-22: 5.5rem;
+    --text-nbrs: 2rem;
 
     --tracking-aside: .144rem;
 
@@ -122,37 +123,18 @@ body {
 /*     } */
 /* } */
 
-
-#btn-open:checked~label .top {
+.top {
     transform: rotate(45deg);
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
     background-color: #fff;
 }
 
-#btn-open:checked~label .middle {
+.middle {
     opacity: 0;
 }
 
-#btn-open:checked~label .bottom {
-    transform: rotate(-45deg);
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-    background-color: #fff;
-}
-
-.top-1 {
-    transform: rotate(45deg);
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-    background-color: #fff;
-}
-
-.middle-1 {
-    opacity: 0;
-}
-
-.bottom-1 {
+.bottom {
     transform: rotate(-45deg);
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
@@ -160,12 +142,9 @@ body {
 }
 
 .menu__nav--open {
-@apply translate-0 w-64 h-dvh
+    @apply translate-0 w-64 h-dvh
 }
 
-#btn-open:checked~label {
-    @apply fill-amber-50;
-}
 
 .menu__bar {
     @apply w-full sm:border-b-3 sm:border-b-transparent hover:border-r-3 hover:border-white/30 sm:w-fit sm:h-full sm:flex sm:items-center sm:justify-center sm:hover:border-r-0 sm:hover:border-b-3
@@ -188,7 +167,7 @@ body {
 }
 
 .text__moon {
-    @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer 
+    @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer
 }
 
 .active {
@@ -196,11 +175,29 @@ body {
 }
 
 .btn__dots {
-    @apply w-2.5 aspect-square rounded-full bg-white/30 cursor-pointer
+    @apply w-2.5 aspect-square rounded-full bg-white/25;
 }
 
 .btn__dots[aria-selected="true"] {
     @apply bg-white;
+}
+
+.btn__dots:hover,
+.btn__dots:focus {
+    @apply  bg-white/55 cursor-pointer
+}
+
+.btn__nbrs {
+    @apply w-10 aspect-square border border-white/25 rounded-full text-lg font-bellefair md:w-14 md:text-2xl xl:w-20 xl:text-nbrs cursor-pointer;   
+}
+
+.btn__nbrs[aria-selected="true"] {
+  @apply  bg-white text-blue-900
+}
+
+.btn__nbrs:hover,
+.btn__nbrs:focus {
+    @apply  border-white/55 text-white/55 cursor-pointer
 }
 
 .letter-spacing-1 {

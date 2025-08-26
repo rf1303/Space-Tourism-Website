@@ -10,14 +10,14 @@ btnMenu.addEventListener('click', () => {
 
     if (lineTrfm) {
         mainNav.classList.remove('menu__nav--open');
-        lineButton[0].classList.remove('top-1');
-        lineButton[1].classList.remove('middle-1');
-        lineButton[2].classList.remove('bottom-1');
+        lineButton[0].classList.remove('top');
+        lineButton[1].classList.remove('middle');
+        lineButton[2].classList.remove('bottom');
     } else {
         mainNav.classList.add('menu__nav--open');
-        lineButton[0].classList.add('top-1');
-        lineButton[1].classList.add('middle-1');
-        lineButton[2].classList.add('bottom-1');
+        lineButton[0].classList.add('top');
+        lineButton[1].classList.add('middle');
+        lineButton[2].classList.add('bottom');
     }
 
     document.addEventListener('keydown', (e) => {
