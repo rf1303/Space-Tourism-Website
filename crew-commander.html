@@ -13,11 +13,11 @@
 </head>
 
 <body
-    class="h-dvh  bg-[url(/assets/images/crew/background-crew-mobile.jpg)] sm:bg-url[(/assets/images/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/images/crew/background-crew-desktop.jpg)] bg-cover bg-center bg-no-repeat ">
-    <header class=" relative p-6 flex justify-between items-center sm:pt-0 sm:pl-10 sm:pr-0 xl:mt-10 xl:pl-16">
+    class="h-dvh  bg-[url(/assets/images/crew/background-crew-mobile.jpg)] md:bg-url[(/assets/images/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/images/crew/background-crew-desktop.jpg)] bg-cover bg-center bg-no-repeat ">
+    <header class=" relative p-6 flex justify-between items-center md:pt-0 md:pl-10 md:pr-0 xl:mt-10 xl:pl-16">
         <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
-                class="w-10 h-10 sm:w-12 sm:h-12">
+                class="w-10 h-10 md:w-12 md:h-12">
                 <g fill="none" fill-rule="evenodd">
                     <circle cx="24" cy="24" r="24" fill="#FFF" />
                     <path fill="#0B0D17"
@@ -38,24 +38,24 @@
                 <span class="line  w-full h-1 bg-blue-300  rounded "></span>
             </button>
             <nav id="main__nav"
-                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static sm:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
+                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static md:translate-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 ">
                 <ul
-                    class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 sm:flex-row sm:items-end  md:mt-0 sm:w-fit md md:h-24  xl:gap-12 ">
+                    class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 md:flex-row md:items-end  md:mt-0 md:w-fit md md:h-24  xl:gap-12 ">
 
                     <li class="menu__bar ">
                         <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span
                                 class="text__number  ">00</span>
                             home</a>
                     </li>
-                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
                         <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
                                 class="text__number">01</span> Destination</a>
                     </li>
-                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
                         <a href="./crew-commander.html" target="_blank" class="text__menu "><span
                                 class="text__number">02</span> Crew</a>
                     </li>
-                    <li class="menu__bar sm:border-b-3 sm:border-b-transparent">
+                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
                         <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
                                 class="text__number">03</span> Technology</a>
                     </li>
@@ -64,8 +64,23 @@
         </section>
     </header>
     <main class="">
-        <div class="flex items-center justify-center">
-            <ul class="peer flex items-center justify-between gap-4 w-22 " role="tablist">
+        <section class="">
+            <header class="">
+                <h1 class="title__page"><span class="title__span">02</span> Meet your crew</h1>
+            </header>
+            <div class="">
+                <div class="">
+                    <h2 class="text-lg text-white/25 font-bellefair uppercase">Commander</h2>
+                    <h2 class="text-2xl text-white font-bellefair uppercase">Douglas Hurley</h2>
+                </div>
+                <p class="text-bxs/relaxed text-white font-barlow">
+                    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                    and former NASA astronaut. He launched into space for the third time as
+                    commander of Crew Dragon Demo-2.
+                </p>
+            </div>
+            <ul class=" flex items-center justify-between gap-4 w-22 max-h-2.5 xl:max-h-dotsXl xl:gap-10"
+                role="tablist">
                 <li class="item__dots">
                     <button class="btn__dots" role="tab" aria-selected="false"><span class="sr-only">slide
                             title</span></button>
@@ -83,28 +98,26 @@
                             title</span></button>
                 </li>
             </ul>
+        </section>
+        <div class="">
+            <img src="./assets/images/crew/image-douglas-hurley.png" alt="" class="" loading="lazy" decoding="async">
         </div>
     </main>
-    <ul class="flex items-center justify-center gap-4 mt-29 text-white/30 xl:flex-col " role="tablist">
-        <li class="item__nbrs w-fit">
-            <button class="btn__nbrs " role="tab" aria-selected="false"><span class="sr-only">slide title</span>1</button>
-        </li>
-        <li class="item__nbrs w-fit">
-            <button class="btn__nbrs" role="tab" aria-selected="false"><span class="sr-only">slide title</span>2</button>
-        </li>
-        <li class="item__nbrs w-fit">
-            <button class="btn__nbrs" role="tab" aria-selected="true"><span class="sr-only">slide title</span>3</button>
-        </li>
-    </ul>
 
-    <!-- 02 Meet your crew -->
-    <!---->
-    <!-- Commander -->
-    <!-- Douglas Hurley -->
-    <!---->
-    <!-- Douglas Gerald Hurley is an American engineer, former Marine Corps pilot -->
-    <!-- and former NASA astronaut. He launched into space for the third time as -->
-    <!-- commander of Crew Dragon Demo-2. -->
+
 </body>
 
 </html>
+
+
+<!-- <ul class="flex items-center justify-center gap-4 mt-29 text-white/30 xl:flex-col " role="tablist"> -->
+<!--         <li class="item__nbrs w-fit"> -->
+<!--             <button class="btn__nbrs " role="tab" aria-selected="false"><span class="sr-only">slide title</span>1</button> -->
+<!--         </li> -->
+<!--         <li class="item__nbrs w-fit"> -->
+<!--             <button class="btn__nbrs" role="tab" aria-selected="false"><span class="sr-only">slide title</span>2</button> -->
+<!--         </li> -->
+<!--         <li class="item__nbrs w-fit"> -->
+<!--             <button class="btn__nbrs" role="tab" aria-selected="true"><span class="sr-only">slide title</span>3</button> -->
+<!--         </li> -->
+<!--     </ul> -->

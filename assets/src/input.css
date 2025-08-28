@@ -94,6 +94,7 @@
     --spacing-exploreXs: 23.875rem;
     --spacing-exploreSm: 17rem;
     --spacing-menuH: clamp(2rem, 6vw, 5rem);
+    --spacing-dotsXl: .938rem;
 
 }
 
@@ -114,6 +115,10 @@ body {
 .line {
     transition: .5s ease-in-out;
     transform-origin: left;
+}
+
+.btn__label {
+    z-index: 50;
 }
 
 /* .btn__label:focus-visible { */
@@ -147,11 +152,11 @@ body {
 
 
 .menu__bar {
-    @apply w-full sm:border-b-3 sm:border-b-transparent hover:border-r-3 hover:border-white/30 sm:w-fit sm:h-full sm:flex sm:items-center sm:justify-center sm:hover:border-r-0 sm:hover:border-b-3
+    @apply w-full md:border-b-3 md:border-b-transparent hover:border-r-3 hover:border-white/30 md:w-fit md:h-full md:flex md:items-center md:justify-center md:hover:border-r-0 md:hover:border-b-3
 }
 
 .menu__bar--active {
-    @apply border-r-3 border-blue-300 sm:border-r-0 sm:border-b-3
+    @apply border-r-3 border-blue-300 md:border-r-0 md:border-b-3
 }
 
 .text__menu {
@@ -174,8 +179,12 @@ body {
     @apply border-b-white
 }
 
+.item__dots {
+    @apply h-fit;
+}
+
 .btn__dots {
-    @apply w-2.5 aspect-square rounded-full bg-white/25;
+    @apply w-2.5 aspect-square rounded-full bg-white/25 xl:w-dotsXl ;
 }
 
 .btn__dots[aria-selected="true"] {
@@ -248,13 +257,6 @@ body {
     font-size: var(--fs-100);
 }
 
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
-    line-height: 1.1;
-}
-
 .numbered__title {
     font-family: var(--ff-barlowCond);
     font-size: var(--fs-500);
@@ -262,8 +264,13 @@ body {
     letter-spacing: 4.72px;
 }
 
+.title__page {
+    @apply text-base text-white text-center tracking-[.15em] font-barlowCond  uppercase md:text-pick md:text-start xl:h-fit;
+}
+
 .title__span {
     margin-inline-end: .5em;
     font-weight: 700;
     color: hsl(var(--clr-white) / .25);
 }
+

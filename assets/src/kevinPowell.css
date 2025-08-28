@@ -14,10 +14,6 @@
     --fs-900: .875rem;
 }
 
-
-
-
-
 @media (prefers-reduce-motion: no-prefer) {
 
     *,
@@ -87,4 +83,11 @@
 .button:hover::after {
     opacity: 1;
     transform: scale(150%);
+}
+
+@supports (backdrop-filter: blur(1.5rem)) {
+    #main__nav {
+        background-color: rgba(#fff, .90);
+        backdrop-filter: blur(1.5rem);
+    }
 }
