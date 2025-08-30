@@ -49,31 +49,31 @@
                     </li>
                     <li class="menu__bar md:border-b-3 md:border-b-transparent">
                         <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
-                                class="text__number">01</span> Destination</a>
+                                class="text__number" aria-hidden="true">01</span> Destination</a>
                     </li>
                     <li class="menu__bar md:border-b-3 md:border-b-transparent">
-                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span
-                                class="text__number">02</span> Crew</a>
+                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span class="text__number"
+                                aria-hidden="true">02</span> Crew</a>
                     </li>
                     <li class="menu__bar md:border-b-3 md:border-b-transparent">
                         <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
-                                class="text__number">03</span> Technology</a>
+                                class="text__number" aria-hidden="true">03</span> Technology</a>
                     </li>
                 </ul>
             </nav>
         </section>
     </header>
-    <main class="">
-        <section class="">
-            <header class="">
-                <h1 class="title__page"><span class="title__span">02</span> Meet your crew</h1>
+    <main class="max-w-clampDestination w-full mx-auto grid gap-8 xl:max-w-[69.375rem] xl:grid-cols-[repeat(2,minmax(0,33.688rem))] xl:h-[792px] ">
+        <section class="grid gap-6 items-center justify-items-center xl:grid-rows-[34px_631px_63px] xl:justify-items-start">
+            <header class="w-full h-fit">
+                <h1 class="title__page "><span class="title__span">02</span> Meet your crew</h1>
             </header>
-            <div class="">
-                <div class="">
-                    <h2 class="text-lg text-white/25 font-bellefair uppercase">Commander</h2>
-                    <h2 class="text-2xl text-white font-bellefair uppercase">Douglas Hurley</h2>
+            <div class="pt-10 max-w-[32rem] grid gap-6 place-items-center text-center xl:max-w-full xl:text-start xl:pt-0">
+                <div class=" xl:w-full">
+                    <h2 class="text-crewSp text-white/25 font-bellefair uppercase">Commander</h2>
+                    <h2 class="text-crewName text-white font-bellefair uppercase">Douglas Hurley</h2>
                 </div>
-                <p class="text-bxs/relaxed text-white font-barlow">
+                <p class="min-h-40 text-bxs/relaxed text-white font-barlow md:text-base xl:text-lg">
                     Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
                     and former NASA astronaut. He launched into space for the third time as
                     commander of Crew Dragon Demo-2.
@@ -99,8 +99,13 @@
                 </li>
             </ul>
         </section>
-        <div class="">
-            <img src="./assets/images/crew/image-douglas-hurley.png" alt="" class="" loading="lazy" decoding="async">
+        <div class="flex place-items-center h-full">
+            <picture class="">
+                <source id="img__webp" src="./assets/images/crew/image-douglas-hurley.webp" type="image/webp">
+                <source id="img__png" src="./assets/images/crew/image-douglas-hurley.png" type="image/png">
+                <img src="./assets/images/crew/image-douglas-hurley.png" alt="imagen Crew Member"
+                    class="w-imgCreww h-imgCrewH object-contain xl:w-[33.688rem] xl:h-[676px]" loading="lazy" decoding="async">
+            </picture>
         </div>
     </main>
 

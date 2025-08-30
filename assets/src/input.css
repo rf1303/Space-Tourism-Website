@@ -71,6 +71,8 @@
     --text-pick: 1.25rem;
     --text-22: 5.5rem;
     --text-nbrs: 2rem;
+    --text-crewName: clamp(1.5rem, 0.5909rem + 3.8788vw, 3.5rem);
+    --text-crewSp: clamp(1.125rem, 0.7273rem + 1.697vw, 2rem);
 
     --tracking-aside: .144rem;
 
@@ -83,6 +85,7 @@
     --spacing-clampDestination: clamp(20.4375rem, -1.2017rem + 92.3274vw, 43rem);
     --spacing-clampMoon: clamp(12.6875rem, 1.8379rem + 46.2916vw, 24rem);
     --spacing-clampDestNav: clamp(20.4375rem, 9.3481rem + 47.3146vw, 32rem);
+    --spacing-padMain: clamp(1.5rem, 0.5409rem + 4.0921vw, 2.5rem);
     --spacing-imgMoon: clamp(9.375rem, 0.3836rem + 38.3632vw, 18.75rem);
     --spacing-29: 7.125rem;
     --spacing-33: 8.25rem;
@@ -95,6 +98,8 @@
     --spacing-exploreSm: 17rem;
     --spacing-menuH: clamp(2rem, 6vw, 5rem);
     --spacing-dotsXl: .938rem;
+    --spacing-imgCrewH: clamp(21.25rem, 13.8771rem + 31.4578vw, 28.9375rem);
+    --spacing-imgCreww: clamp(16.9375rem, 6.4476rem + 44.757vw, 27.875rem);
 
 }
 
@@ -209,8 +214,8 @@ body {
     @apply  border-white/55 text-white/55 cursor-pointer
 }
 
-.letter-spacing-1 {
-    letter-spacing: 4.75px;
+.ltr-spc-1 {
+    letter-spacing: 4px;
 }
 
 .letter-spacing-2 {
@@ -265,7 +270,7 @@ body {
 }
 
 .title__page {
-    @apply text-base text-white text-center tracking-[.15em] font-barlowCond  uppercase md:text-pick md:text-start xl:h-fit;
+    @apply text-base text-white text-center tracking-[.15em] font-barlowCond  uppercase md:text-pick md:text-start xl:h-fit xl:text-destKm xl:tracking-[4px];
 }
 
 .title__span {
