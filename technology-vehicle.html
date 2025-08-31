@@ -44,7 +44,7 @@
 
                     <li class="menu__bar ">
                         <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span
-                                class="text__number  ">00</span>
+                                class="text__number  " aria-hidden="true">00</span>
                             home</a>
                     </li>
                     <li class="menu__bar md:border-b-3 md:border-b-transparent">
@@ -63,21 +63,52 @@
             </nav>
         </section>
     </header>
-    <main class="">
-        <section class="">
-            <header class="">
-                
-                <h1 class="title__page "><span class="title__span">02</span> Space launch 101</h1>
-            </header>
+    <main class="grid gap-6">
+        <header class="">
+            <h1 class="title__page "><span class="title__span" aria-hidden="true">03</span> Space launch 101</h1>
+        </header>
+        <section class="grid gap-8">
+            <div class="w-full max-h-imgTecn pt-16">
+                <picture class="">
+                    <source id="img__portaid" src="./assets/images/technology/image-launch-vehicle-portrait.jpg"
+                        media="(min-width: 79.999em)" type="image/jpg">
+                    <source id="img__landscp" src="./assets/images/technology/image-launch-vehicle-portrait.jpg"
+                        media="(min-width: 79.999em)" type="image/jpg">
+                    <img src="./assets/images/technology/image-launch-vehicle-portrait.jpg" alt="imagen Crew Member"
+                        class=" w-full max-h-imgTecn object-contain" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <section class="max-w-clampDestination w-full mx-auto  text-white grid grid-cols-1 gap-10 items-center justify-items-center">
+                <div class="">
+                    <ul class="flex items-center justify-center gap-4  text-white/30 xl:flex-col " role="tablist">
+                        <li class="item__nbrs w-fit">
+                            <button class="btn__nbrs " role="tab" aria-selected="false"><span class="sr-only">slide
+                                    title</span>1</button>
+                        </li>
+                        <li class="item__nbrs w-fit">
+                            <button class="btn__nbrs" role="tab" aria-selected="false"><span class="sr-only">slide
+                                    title</span>2</button>
+                        </li>
+                        <li class="item__nbrs w-fit">
+                            <button class="btn__nbrs" role="tab" aria-selected="true"><span class="sr-only">slide
+                                    title</span>3</button>
+                        </li>
+                    </ul>
+                </div>
+                <article class=" grid gap-4 items-center justify-items-center">
+                    <h2 class="title__main">The terminology...</h2>
+                    <h3 class="title__mainTwo">Launch vehicle</h3>
+                    <p class="title__paraghraph text-center ">
+                        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                        payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                        it's quite an awe-inspiring sight on the launch pad!
+                    </p>
+                </article>
+            </section>
         </section>
     </main>
-    The terminology...
-    Launch vehicle
 
-    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-    payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-    it's quite an awe-inspiring sight on the launch pad!
 </body>
 
 </html>

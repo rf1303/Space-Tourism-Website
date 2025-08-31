@@ -100,6 +100,8 @@
     --spacing-dotsXl: .938rem;
     --spacing-imgCrewH: clamp(21.25rem, 13.8771rem + 31.4578vw, 28.9375rem);
     --spacing-imgCreww: clamp(16.9375rem, 6.4476rem + 44.757vw, 27.875rem);
+    --spacing-imgTecn: clamp(20.125rem, 14.1907rem + 25.3197vw, 26.3125rem);
+
 
 }
 
@@ -226,42 +228,6 @@ body {
     letter-spacing: 2px;
 }
 
-.fs-900 {
-    font-size: var(--fs-900);
-}
-
-.fs-800 {
-    font-size: var(--fs-800);
-}
-
-.fs-700 {
-    font-size: var(--fs-700);
-}
-
-.fs-600 {
-    font-size: var(--fs-600);
-}
-
-.fs-500 {
-    font-size: var(--fs-500);
-}
-
-.fs-400 {
-    font-size: var(--fs-400);
-}
-
-.fs-300 {
-    font-size: var(--fs-300);
-}
-
-.fs-200 {
-    font-size: var(--fs-200);
-}
-
-.fs-100 {
-    font-size: var(--fs-100);
-}
-
 .numbered__title {
     font-family: var(--ff-barlowCond);
     font-size: var(--fs-500);
@@ -278,4 +244,24 @@ body {
     font-weight: 700;
     color: hsl(var(--clr-white) / .25);
 }
+
+.title__main {
+    @apply text-crewSp text-white/20 font-bellefair uppercase;
+}
+
+.title__mainTwo {
+    @apply text-crewName text-white font-bellefair uppercase;
+}
+
+.title__paraghraph {
+   @apply min-h-40 text-bxs/relaxed text-white font-barlow md:text-base xl:text-lg;
+}
+
+
+
+
+
+
+
+
 
