@@ -72,30 +72,30 @@
                 <picture class="">
                     <source id="img__webp" src="./assets/images/destination/image-europa.webp" type="image/webp">
                     <source id="img__png" src="./assets/images/destination/image-europa.png" type="image/png">
-                    <img src="./assets/images/destination/image-europa.png" alt="imagen europa"
-                        class="w-imgMoon object-contain xl:w-[30rem] aspect-square" loading="lazy" decoding="async">
+                    <img src="./assets/images/destination/image-europa.webp" alt="imagen europa"
+                        class="w-imgMoon object-contain xl:w-[30rem] aspect-square transition__screen " id="data__img" loading="lazy" decoding="async">
                 </picture>
             </div>
         </header>
         <section class="w-clampDestNav grid gap-6 xl:w-[27.813rem] xl:gap-10">
             <ul class="peer flex items-center justify-around gap-8 md:justify-center xl:justify-start">
                 <li class="item__moon">
-                    <button class="text__moon" aria-selected="false">moon</button>
+                    <button class="text__moon" aria-selected="false" data-destination="Moon">moon</button>
                 </li>
                 <li class="item__moon">
-                    <button class="text__moon" aria-selected="false">mars</button>
+                    <button class="text__moon" aria-selected="false" data-destination="Mars">mars</button>
                 </li>
                 <li class="item__moon active ">
-                    <button class="text__moon" aria-selected="true">europa</button>
+                    <button class="text__moon" aria-selected="true" data-destination="Europa">europa</button>
                 </li>
                 <li class="item__moon">
-                    <button class="text__moon" aria-selected="false">titan</button>
+                    <button class="text__moon" aria-selected="false" data-destination="Titan">titan</button>
                 </li>
             </ul>
             <article class="grid gap-6 xl:gap-10">
                 <div class="grid gap-4 place-items-center xl:justify-items-start">
-                    <h1 class="text-destMobTab/none text-white font-bellefair xl:text-destDesktop uppercase">europa</h1>
-                    <p class="text-bxs/7 text-white text-center font-barlow xl:text-lg/[1.78] xl:text-start">
+                    <h1 id="data__name" class="text-destMobTab/none text-white font-bellefair xl:text-destDesktop uppercase transition__screen ">europa</h1>
+                    <p id="data__description" class="text-bxs/7 text-white text-center font-barlow xl:text-lg/[1.78] xl:text-start transition__screen ">
                         The smallest of the four Galilean moons orbiting Jupiter, Europa is a
                         winter lover’s dream. With an icy surface, it’s perfect for a bit of
                         ice skating, curling, hockey, or simple relaxation in your snug
@@ -105,14 +105,14 @@
                 <div class="w-full h-px bg-white/30 "></div>
                 <div class="flex flex-col gap-6 items-center justify-center md:flex-row md:w-full">
                     <div class="w-full grid gap-3 place-items-center xl:justify-items-start ">
-                        <span class="text-sm/none ltr-spc-3 text-blue-300 font-barlowCond uppercase">Avg.
+                        <span  class="text-sm/none ltr-spc-3 text-blue-300 font-barlowCond uppercase">Avg.
                             distance</span>
-                        <p class="text-destKm/none text-white font-bellefair uppercase">628 mil. km</p>
+                        <p id="data__distance" class="text-destKm/none text-white font-bellefair uppercase">628 mil. km</p>
                     </div>
                     <div class="w-full grid gap-3 place-items-center xl:justify-items-start">
                         <span class="text-sm/none ltr-spc-3 text-blue-300 font-barlowCond uppercase">Est. travel
                             time</span>
-                        <p class="text-destKm/none text-white font-bellefair uppercase">3 years</p>
+                        <p id="data__travel" class="text-destKm/none text-white font-bellefair uppercase">3 years</p>
                     </div>
                 </div>
             </article>
@@ -121,5 +121,6 @@
 
 
 </body>
+
 
 </html>

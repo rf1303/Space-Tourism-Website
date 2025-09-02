@@ -1,4 +1,6 @@
 import './menu.js';
+import './destination.js';
+import './data-change.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -30,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('No corresponde', href);
         }
     });
-
-
 
 
 });

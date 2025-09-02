@@ -100,7 +100,7 @@
     --spacing-dotsXl: .938rem;
     --spacing-imgCrewH: clamp(21.25rem, 13.8771rem + 31.4578vw, 28.9375rem);
     --spacing-imgCreww: clamp(16.9375rem, 6.4476rem + 44.757vw, 27.875rem);
-    --spacing-imgTecn: clamp(20.125rem, 14.1907rem + 25.3197vw, 26.3125rem);
+    --spacing-imgTecn: clamp(16.125rem, 10.1907rem + 25.3197vw, 22.3125rem);
 
 
 }
@@ -200,7 +200,7 @@ body {
 
 .btn__dots:hover,
 .btn__dots:focus {
-    @apply  bg-white/55 cursor-pointer
+    @apply  bg-white/55 cursor-pointer;
 }
 
 .btn__nbrs {
@@ -208,12 +208,12 @@ body {
 }
 
 .btn__nbrs[aria-selected="true"] {
-  @apply  bg-white text-blue-900
+  @apply  bg-white text-blue-900;
 }
 
-.btn__nbrs:hover,
-.btn__nbrs:focus {
-    @apply  border-white/55 text-white/55 cursor-pointer
+.btn__nbrs:not([aria-selected="true"]):hover,
+.btn__nbrs:not([aria-selected="true"]):focus {
+    @apply  border-white/55 text-white/55 cursor-pointer;
 }
 
 .ltr-spc-1 {
@@ -257,7 +257,9 @@ body {
    @apply min-h-40 text-bxs/relaxed text-white font-barlow md:text-base xl:text-lg;
 }
 
-
+.transition__screen {
+    @apply transition-all duration-300 ease-in-out;
+}
 
 
 

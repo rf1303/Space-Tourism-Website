@@ -29,7 +29,6 @@
             <span class=" w-full h-px bg-white/35"></span>
         </div>
         <section class="sm:h-24 ">
-            <!-- <input type="checkbox" name="btnopen" id="btn-open" class="peer hidden " /> -->
             <button id="btn__menu" type="menu"
                 class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
                 aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
@@ -63,24 +62,24 @@
             </nav>
         </section>
     </header>
-    <main class="grid gap-6">
+    <main class="grid gap-6 xl:grid-cols-[79.688rem] xl:justify-end xl:align-middle xl:gap-0 xl:mt-6">
         <header class="">
             <h1 class="title__page "><span class="title__span" aria-hidden="true">03</span> Space launch 101</h1>
         </header>
-        <section class="grid gap-8">
-            <div class="w-full max-h-imgTecn pt-16">
+        <section class="grid gap-8 xl:grid-cols-[39.688rem_38rem] xl:justify-end xl:h-[45.875rem]">
+            <div class="w-full mt-16 xl:order-2 xl:mt-0 xl:flex xl:items-center">
                 <picture class="">
-                    <source id="img__portaid" src="./assets/images/technology/image-launch-vehicle-portrait.jpg"
+                    <source id="img__portaid" srcset="./assets/images/technology/image-launch-vehicle-portrait.jpg"
                         media="(min-width: 79.999em)" type="image/jpg">
-                    <source id="img__landscp" src="./assets/images/technology/image-launch-vehicle-portrait.jpg"
-                        media="(min-width: 79.999em)" type="image/jpg">
+                    <source id="img__landscp" srcset="./assets/images/technology/image-launch-vehicle-landscape.jpg"
+                        media="(min-width: 47.875em)" type="image/jpg">
                     <img src="./assets/images/technology/image-launch-vehicle-portrait.jpg" alt="imagen Crew Member"
-                        class=" w-full max-h-imgTecn object-contain" loading="lazy" decoding="async">
+                        class=" w-full max-h-imgTecn object-cover object-bottom md:object-center xl:w-[38rem] xl:max-h-[37.5rem]" loading="lazy" decoding="async">
                 </picture>
             </div>
-            <section class="max-w-clampDestination w-full mx-auto  text-white grid grid-cols-1 gap-10 items-center justify-items-center">
+            <section class="max-w-clampDestination w-full mx-auto  text-white grid grid-cols-1 gap-10 items-center justify-items-center xl:grid-cols-[minmax(0,5rem)_minmax(0,30.688rem)] xl:gap-16">
                 <div class="">
-                    <ul class="flex items-center justify-center gap-4  text-white/30 xl:flex-col " role="tablist">
+                    <ul class="flex items-center justify-center gap-4  text-white/30 xl:flex-col xl:gap-8 " role="tablist">
                         <li class="item__nbrs w-fit">
                             <button class="btn__nbrs " role="tab" aria-selected="false"><span class="sr-only">slide
                                     title</span>1</button>
@@ -95,10 +94,10 @@
                         </li>
                     </ul>
                 </div>
-                <article class=" grid gap-4 items-center justify-items-center">
-                    <h2 class="title__main">The terminology...</h2>
-                    <h3 class="title__mainTwo">Launch vehicle</h3>
-                    <p class="title__paraghraph text-center ">
+                <article class=" grid gap-4 items-center justify-items-center xl:justify-start">
+                    <h2 class="title__main w-full">The terminology...</h2>
+                    <h3 class="title__mainTwo w-full">Launch vehicle</h3>
+                    <p class="title__paraghraph text-center xl:text-start">
                         A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
                         payload from Earth's surface to space, usually to Earth orbit or beyond. Our
                         WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
