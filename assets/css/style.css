@@ -439,6 +439,9 @@
       background-color: color-mix(in oklab, var(--color-white) 35%, transparent);
     }
   }
+  .bg-\[url\(\'\.\.\/assets\/images\/home\/background-home-mobile\.jpg\'\)\] {
+    background-image: url('../assets/images/home/background-home-mobile.jpg');
+  }
   .bg-\[url\(\'\.\/assets\/images\/home\/background-home-mobile\.jpg\'\)\] {
     background-image: url('./assets/images/home/background-home-mobile.jpg');
   }
@@ -872,6 +875,11 @@
   .md\:opacity-0 {
     @media (width >= 47.875rem) {
       opacity: 0%;
+    }
+  }
+  .lg\:bg-\[url\(\'\.\.\/assets\/images\/home\/background-home-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('../assets/images/home/background-home-desktop.jpg');
     }
   }
   .lg\:bg-\[url\(\'\.\/assets\/images\/home\/background-home-desktop\.jpg\'\)\] {
