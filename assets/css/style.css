@@ -49,7 +49,6 @@
     --spacing-clampMoon: clamp(12.6875rem, 1.8379rem + 46.2916vw, 24rem);
     --spacing-clampDestNav: clamp(20.4375rem, 9.3481rem + 47.3146vw, 32rem);
     --spacing-imgMoon: clamp(9.375rem, 0.3836rem + 38.3632vw, 18.75rem);
-    --spacing-29: 7.125rem;
     --spacing-33: 8.25rem;
     --spacing-mainMobile: 42.25rem;
     --spacing-mainTablet: 37.875rem;
@@ -255,9 +254,6 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
-  .mt-29 {
-    margin-top: var(--spacing-29);
-  }
   .mt-33 {
     margin-top: var(--spacing-33);
   }
@@ -356,6 +352,9 @@
   }
   .max-w-\[32rem\] {
     max-width: 32rem;
+  }
+  .max-w-clampDestNav {
+    max-width: var(--spacing-clampDestNav);
   }
   .max-w-clampDestination {
     max-width: var(--spacing-clampDestination);
@@ -1475,6 +1474,7 @@ body {
   color: hsl(var(--clr-white) / .25);
 }
 .title__main {
+  text-align: center;
   font-family: var(--font-bellefair);
   font-size: var(--text-crewSp);
   color: color-mix(in srgb, #fff 20%, transparent);
@@ -1482,12 +1482,19 @@ body {
     color: color-mix(in oklab, var(--color-white) 20%, transparent);
   }
   text-transform: uppercase;
+  @media (width >= 80rem) {
+    text-align: start;
+  }
 }
 .title__mainTwo {
+  text-align: center;
   font-family: var(--font-bellefair);
   font-size: var(--text-crewName);
   color: var(--color-white);
   text-transform: uppercase;
+  @media (width >= 80rem) {
+    text-align: start;
+  }
 }
 .title__paraghraph {
   min-height: calc(var(--spacing) * 40);

@@ -246,11 +246,11 @@ body {
 }
 
 .title__main {
-    @apply text-crewSp text-white/20 font-bellefair uppercase;
+    @apply text-crewSp text-white/20 text-center font-bellefair uppercase xl:text-start;
 }
 
 .title__mainTwo {
-    @apply text-crewName text-white font-bellefair uppercase;
+    @apply text-crewName text-white text-center font-bellefair uppercase xl:text-start;
 }
 
 .title__paraghraph {
