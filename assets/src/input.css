@@ -152,6 +152,9 @@ body {
     .bg__technology {
         background-image: url('../images/technology/background-technology-tablet.jpg');
     }   
+    .md__translate  {
+        translate: 0;
+    }
 }
 
 @media (min-width: 80em) {
