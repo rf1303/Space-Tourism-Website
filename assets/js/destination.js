@@ -49,14 +49,6 @@ export const dataDestination = async (dataName) => {
     imgWebp.src = destination.images.webp;
     imgPng.src = destination.images.png;
 
-    console.log(destination);
-    console.log(destination.name);
-    console.log(destination.images.png);
-    console.log(destination.images.webp);
-    console.log(destination.description);
-    console.log(destination.distance);
-    console.log(destination.travel);
-
 };
 
 

@@ -191,7 +191,7 @@ body {
 }
 
 .btn__dots {
-    @apply w-2.5 aspect-square rounded-full bg-white/25 xl:w-dotsXl ;
+    @apply w-2.5 aspect-square rounded-full bg-white/25 xl:w-dotsXl cursor-pointer;
 }
 
 .btn__dots[aria-selected="true"] {
@@ -200,7 +200,7 @@ body {
 
 .btn__dots:hover,
 .btn__dots:focus {
-    @apply  bg-white/55 cursor-pointer;
+    @apply  bg-white/55  outline-1 outline-offset-3 outline-blue-300 ;
 }
 
 .btn__nbrs {

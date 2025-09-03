@@ -1,6 +1,8 @@
 import './menu.js';
-import './destination.js';
 import './data-change.js';
+import './destination.js';
+import './crew.js';
+import './technology.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 

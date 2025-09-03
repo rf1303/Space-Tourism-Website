@@ -28,7 +28,7 @@
         <div class="hidden w-full xl:flex xl:translate-x-14 items-center justify-center z-50">
             <span class=" w-full h-px bg-white/35"></span>
         </div>
-        <section class="sm:h-24 ">
+        <section class="md:h-24 ">
             <button id="btn__menu" type="menu"
                 class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
                 aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
@@ -64,16 +64,16 @@
     </header>
     <main class="grid gap-6 xl:grid-cols-[79.688rem] xl:justify-end xl:align-middle xl:gap-0 xl:mt-6">
         <header class="">
-            <h1 id="data__name" class="title__page "><span class="title__span" aria-hidden="true">03</span> Space launch 101</h1>
+            <h1 id="data__name" class="title__page md:pl-10"><span class="title__span" aria-hidden="true">03</span> Space launch 101</h1>
         </header>
         <section class="grid gap-8 xl:grid-cols-[39.688rem_38rem] xl:justify-end xl:h-[45.875rem]">
             <div class="w-full mt-16 xl:order-2 xl:mt-0 xl:flex xl:items-center">
                 <picture class="">
-                    <source id="img__portaid" srcset="./assets/images/technology/image-launch-vehicle-portrait.jpg"
+                    <source id="img__portrait" srcset="./assets/images/technology/image-launch-vehicle-portrait.jpg"
                         media="(min-width: 79.999em)" type="image/jpg">
                     <source id="img__landscp" srcset="./assets/images/technology/image-launch-vehicle-landscape.jpg"
                         media="(min-width: 47.875em)" type="image/jpg">
-                    <img src="./assets/images/technology/image-launch-vehicle-portrait.jpg" alt="imagen Crew Member"
+                    <img src="./assets/images/technology/image-launch-vehicle-portrait.jpg" alt="imagen Crew Member" id="data__img"
                         class=" w-full max-h-imgTecn object-cover object-bottom md:object-center xl:w-[38rem] xl:max-h-[37.5rem]" loading="lazy" decoding="async">
                 </picture>
             </div>
@@ -81,20 +81,20 @@
                 <div class="">
                     <ul class="flex items-center justify-center gap-4  text-white/30 xl:flex-col xl:gap-8 " role="tablist">
                         <li class="item__nbrs w-fit">
-                            <button class="btn__nbrs " role="tab" aria-selected="false"><span class="sr-only">slide
+                            <button class="btn__nbrs " role="tab" aria-selected="true" data-techn="0"><span class="sr-only">slide
                                     title</span>1</button>
                         </li>
                         <li class="item__nbrs w-fit">
-                            <button class="btn__nbrs" role="tab" aria-selected="false"><span class="sr-only">slide
+                            <button class="btn__nbrs" role="tab" aria-selected="false" data-techn="1"><span class="sr-only">slide
                                     title</span>2</button>
                         </li>
                         <li class="item__nbrs w-fit">
-                            <button class="btn__nbrs" role="tab" aria-selected="true"><span class="sr-only">slide
+                            <button class="btn__nbrs" role="tab" aria-selected="false" data-techn="2"><span class="sr-only">slide
                                     title</span>3</button>
                         </li>
                     </ul>
                 </div>
-                <article class="max-w-clampDestNav grid gap-4 items-center justify-items-center xl:justify-start">
+                <article class="max-w-clampDestNav pb-12 grid gap-4 items-center justify-items-center xl:justify-start">
                     <h2 class="title__main w-full">The terminology...</h2>
                     <h3 class="title__mainTwo w-full">Launch vehicle</h3>
                     <p id="data__description" class="title__paraghraph text-center xl:text-start">

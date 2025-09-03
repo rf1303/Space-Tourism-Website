@@ -483,6 +483,9 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
   }
@@ -1365,6 +1368,7 @@ body {
 .btn__dots {
   aspect-ratio: 1 / 1;
   width: calc(var(--spacing) * 2.5);
+  cursor: pointer;
   border-radius: calc(infinity * 1px);
   background-color: color-mix(in srgb, #fff 25%, transparent);
   @supports (color: color-mix(in lab, red, red)) {
@@ -1378,11 +1382,14 @@ body {
   background-color: var(--color-white);
 }
 .btn__dots:hover, .btn__dots:focus {
-  cursor: pointer;
   background-color: color-mix(in srgb, #fff 55%, transparent);
   @supports (color: color-mix(in lab, red, red)) {
     background-color: color-mix(in oklab, var(--color-white) 55%, transparent);
   }
+  outline-style: var(--tw-outline-style);
+  outline-width: 1px;
+  outline-offset: 3px;
+  outline-color: var(--color-blue-300);
 }
 .btn__nbrs {
   aspect-ratio: 1 / 1;
