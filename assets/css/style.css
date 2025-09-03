@@ -436,18 +436,6 @@
       background-color: color-mix(in oklab, var(--color-white) 35%, transparent);
     }
   }
-  .bg-\[url\(\'assets\/images\/home\/background-home-mobile\.jpg\'\)\] {
-    background-image: url('assets/images/home/background-home-mobile.jpg');
-  }
-  .bg-cover {
-    background-size: cover;
-  }
-  .bg-center {
-    background-position: center;
-  }
-  .bg-no-repeat {
-    background-repeat: no-repeat;
-  }
   .object-contain {
     object-fit: contain;
   }
@@ -869,11 +857,6 @@
   .md\:opacity-0 {
     @media (width >= 47.875rem) {
       opacity: 0%;
-    }
-  }
-  .lg\:bg-\[url\(\'\.\.\/assets\/images\/home\/background-home-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('../assets/images/home/background-home-desktop.jpg');
     }
   }
   .xl\:order-2 {
