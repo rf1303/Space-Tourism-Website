@@ -232,7 +232,15 @@ body {
 }
 
 .menu__bar--active {
-    @apply border-r-3 border-blue-300 md:border-r-0 md:border-b-3
+    border-right: 3px;
+    border-color: white;
+}
+
+@media (min-width: 47.875em) {
+    .menu__bar--active {
+        border-right: 0;
+        border-bottom: 3px;
+    }
 }
 
 .text__menu {
