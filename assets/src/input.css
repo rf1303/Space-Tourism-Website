@@ -115,44 +115,51 @@ body {
 }
 
 .bg__home {
-    background-image: url('../images/home/background-home-mobile.jpg'); 
+    background-image: url('../images/home/background-home-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
+
 .bg__destination {
-    background-image: url('../images/destination/background-destination-mobile.jpg'); 
+    background-image: url('../images/destination/background-destination-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
+
 .bg__crew {
-    background-image: url('../images/crew/background-crew-mobile.jpg'); 
+    background-image: url('../images/crew/background-crew-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
-.bg__technology{
-    background-image: url('../images/technology/background-technology-mobile.jpg'); 
+
+.bg__technology {
+    background-image: url('../images/technology/background-technology-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
 @media (min-width: 47.875em) {
     .bg__home {
         background-image: url('../images/home/background-home-tablet.jpg');
-    }   
+    }
+
     .bg__destination {
         background-image: url('../images/destination/background-destination-tablet.jpg');
-    }   
+    }
+
     .bg__crew {
         background-image: url('../images/crew/background-crew-tablet.jpg');
-    }   
+    }
+
     .bg__technology {
         background-image: url('../images/technology/background-technology-tablet.jpg');
-    }   
-    .md__translate  {
+    }
+
+    .md__translate {
         translate: 0;
     }
 }
@@ -160,16 +167,19 @@ body {
 @media (min-width: 80em) {
     .bg__home {
         background-image: url('../images/home/background-home-desktop.jpg');
-    }   
+    }
+
     .bg__destination {
         background-image: url('../images/destination/background-destination-desktop.jpg');
-    }   
+    }
+
     .bg__crew {
         background-image: url('../images/crew/background-crew-desktop.jpg');
-    }   
+    }
+
     .bg__technology {
         background-image: url('../images/technology/background-technology-desktop.jpg');
-    }   
+    }
 }
 
 @media (min-width: 1024px) {
@@ -242,7 +252,8 @@ body {
 }
 
 .active {
-    @apply border-b-white
+    border-bottom: 2px;
+    border-color: white;
 }
 
 .item__dots {
@@ -259,20 +270,20 @@ body {
 
 .btn__dots:hover,
 .btn__dots:focus {
-    @apply  bg-white/55  outline-1 outline-offset-3 outline-blue-300 ;
+    @apply bg-white/55 outline-1 outline-offset-3 outline-blue-300;
 }
 
 .btn__nbrs {
-    @apply w-10 aspect-square border border-white/25 rounded-full text-lg font-bellefair md:w-14 md:text-2xl xl:w-20 xl:text-nbrs cursor-pointer;   
+    @apply w-10 aspect-square border border-white/25 rounded-full text-lg font-bellefair md:w-14 md:text-2xl xl:w-20 xl:text-nbrs cursor-pointer;
 }
 
 .btn__nbrs[aria-selected="true"] {
-  @apply  bg-white text-blue-900;
+    @apply bg-white text-blue-900;
 }
 
 .btn__nbrs:not([aria-selected="true"]):hover,
 .btn__nbrs:not([aria-selected="true"]):focus {
-    @apply  border-white/55 text-white/55 cursor-pointer;
+    @apply border-white/55 text-white/55 cursor-pointer;
 }
 
 .ltr-spc-1 {
@@ -295,7 +306,7 @@ body {
 }
 
 .title__page {
-    @apply text-base text-white text-center tracking-[.15em] font-barlowCond  uppercase md:text-pick md:text-start xl:h-fit xl:text-destKm xl:tracking-[4px];
+    @apply text-base text-white text-center tracking-[.15em] font-barlowCond uppercase md:text-pick md:text-start xl:h-fit xl:text-destKm xl:tracking-[4px];
 }
 
 .title__span {
@@ -313,16 +324,9 @@ body {
 }
 
 .title__paraghraph {
-   @apply min-h-40 text-bxs/relaxed text-white font-barlow md:text-base xl:text-lg;
+    @apply min-h-40 text-bxs/relaxed text-white font-barlow md:text-base xl:text-lg;
 }
 
 .transition__screen {
     @apply transition-all duration-300 ease-in-out;
 }
-
-
-
-
-
-
-

@@ -1380,7 +1380,8 @@ body {
   text-transform: uppercase;
 }
 .active {
-  border-bottom-color: var(--color-white);
+  border-bottom: 2px;
+  border-color: white;
 }
 .item__dots {
   height: fit-content;
