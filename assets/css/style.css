@@ -1326,16 +1326,13 @@ body {
   }
 }
 .menu__bar--active {
-  border-right-style: var(--tw-border-style);
-  border-right-width: 3px;
-  border-color: var(--color-blue-300);
-  @media (width >= 47.875rem) {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 0px;
-  }
-  @media (width >= 47.875rem) {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 3px;
+  border-right: 3px;
+  border-color: white;
+}
+@media (min-width: 47.875em) {
+  .menu__bar--active {
+    border-right: 0;
+    border-bottom: 3px;
   }
 }
 .text__menu {
