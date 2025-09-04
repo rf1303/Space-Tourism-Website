@@ -26,5 +26,11 @@ btnMenu.addEventListener('click', () => {
         }
     });
 
-
 });
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 766) {
+        mainNav.classList.remove("menu__nav--open");
+    }
+});
+
