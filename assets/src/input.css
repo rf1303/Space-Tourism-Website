@@ -226,7 +226,7 @@ body {
 }
 
 .menu__bar {
-    @apply w-full transition-all duration-200 ease-in md:border-b-3 md:border-b-transparent hover:border-r-4 hover:border-white/30 md:w-fit md:h-full md:flex md:items-center md:justify-center md:hover:border-r-0 md:hover:border-b-4;
+    @apply w-full transition-all duration-200 ease-in md:border-b-3 md:border-b-transparent hover:border-r-4 hover:border-white/30 md:w-fit md:h-full md:flex md:items-center md:justify-center md:hover:border-r-0 md:hover:border-b-3;
     position: relative;
 }
 
@@ -238,7 +238,7 @@ body {
     position: absolute;
     content: '';
     left: 0;
-    bottom: -1%;
+    bottom: -3%;
     inline-size: 100%;
     block-size: .188rem;
     background-color: #fff;
