@@ -32,11 +32,13 @@ export const dataTechn = async (dataName) => {
     const imgLandscp = document.getElementById('img__landscp');
     const dataDescrp = document.getElementById('data__description');
 
-    dataTitle.textContent = technologys[dataName].name;
-    dataDescrp.textContent = technologys[dataName].description;
-    dataImg.src = technologys[dataName].images.portrait;
-    imgPortrait.srcset = technologys[dataName].images.portrait;
-    imgLandscp.srcset = technologys[dataName].images.landscape;
+    dataTitle.textContent = technologys[dataName]?.name || "Technology Unknown dates";
+    dataDescrp.textContent = technologys[dataName]?.description || "Unknown dates";
+    dataImg.src = technologys[dataName]?.images.portrait || 'Unknown dates';
+    imgPortrait.srcset = technologys[dataName]?.images.portrait || "Unknown dates";
+    imgLandscp.srcset = technologys[dataName]?.images.landscape || "Unknown dates";
 
 };
+
+
 

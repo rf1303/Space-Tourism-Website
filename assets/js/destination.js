@@ -22,7 +22,6 @@ textMoon.forEach(btn => {
 export const dataDestination = async (dataName) => {
 
     const destinations = await dataSpace("destinations");
-    if (!destination) return;
 
     const destination = destinations.find(d => d.name.toLowerCase() === dataName.toLowerCase());
     if (!destination) {
@@ -44,6 +43,8 @@ export const dataDestination = async (dataName) => {
     dataImg.src = destination.images.webp;
     imgWebp.src = destination.images.webp;
     imgPng.src = destination.images.png;
+
+
 
 };
 
