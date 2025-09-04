@@ -19,6 +19,7 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
+    --tracking-wider: 0.05em;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1369,59 +1370,26 @@ body {
   }
 }
 .text__moon {
+  cursor: pointer;
+  font-family: var(--font-barlowCond);
+  font-size: var(--text-base);
+  line-height: 1;
+  --tw-tracking: var(--tracking-wider);
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-blue-300);
+  text-transform: uppercase;
+}
+.text__moon[aria-selected="true"] {
   position: relative;
-  color: var(--color-white);
-  &::after {
-    content: var(--tw-content);
-    position: absolute;
-  }
-  &::after {
-    content: var(--tw-content);
-    bottom: calc(var(--spacing) * 0);
-  }
-  &::after {
-    content: var(--tw-content);
-    left: calc(var(--spacing) * 0);
-  }
-  &::after {
-    content: var(--tw-content);
-    height: 2px;
-  }
-  &::after {
-    content: var(--tw-content);
-    width: 100%;
-  }
-  &::after {
-    content: var(--tw-content);
-    transform-origin: left;
-  }
-  &::after {
-    content: var(--tw-content);
-    --tw-scale-x: 0%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  &::after {
-    content: var(--tw-content);
-    background-color: var(--color-white);
-  }
-  &::after {
-    content: var(--tw-content);
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  &::after {
-    content: var(--tw-content);
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-  }
-  &[aria-selected="true"] {
-    &::after {
-      content: var(--tw-content);
-      --tw-scale-x: 100%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
+}
+.text__moon[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 2px;
+  background: white;
 }
 .active {
   border-bottom: 3px;

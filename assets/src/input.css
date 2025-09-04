@@ -256,9 +256,22 @@ body {
 }
 
 .text__moon {
-    /*     @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer */
-    @apply relative text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 aria-[selected=true]:after:scale-x-100;
+     @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer 
 }
+.text__moon[aria-selected="true"] {
+  position: relative;
+}
+
+.text__moon[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%; /* espacio bajo el texto */
+  width: 100%;
+  height: 2px;
+  background: white; /* o el color que quieras */
+}
+
 
 .active {
     border-bottom: 3px ;
