@@ -14,7 +14,6 @@ textMoon.forEach(btn => {
         btn.parentElement.classList.add("active");
 
         const dataName = btn.dataset.destination;
-        console.log('Nombre: ', dataName);
 
         (async () => {
             await dataDestination(dataName);

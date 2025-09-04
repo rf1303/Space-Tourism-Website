@@ -252,7 +252,7 @@ body {
 }
 
 .item__moon {
-    @apply w-fit h-8 flex items-start border-b-3 border-b-transparent hover:border-b-white/20
+    @apply w-fit h-8 flex items-start hover:border-b-3  hover:border-b-white/20;
 }
 
 .text__moon {
@@ -260,7 +260,7 @@ body {
 }
 
 .active {
-    border-bottom: 2px;
+    border-bottom: 3px !important;
     border-color: white;
 }
 
