@@ -28,7 +28,7 @@
         <div class="hidden w-full xl:flex xl:translate-x-14 items-center justify-center z-50">
             <span class=" w-full h-px bg-white/35"></span>
         </div>
-        <section class="sm:h-24 ">
+        <section class="md:h-24 ">
             <button id="btn__menu" type="button"
                 class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-40 cursor-pointer group md:w-px md:h-px md:opacity-0 "
                 aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
@@ -37,24 +37,24 @@
                 <span class="line  w-full h-1 bg-blue-300  rounded "></span>
             </button>
             <nav id="main__nav"
-                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static md:translate-x-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 md__translate ">
+                class=" absolute bg-blue-900/10 backdrop-blur-xl top-0 right-0 pl-8  w-px h-px translate-x-full transition-transform duration-500 ease-in-out  md:static md:translate-x-0 md:w-[40rem] md:h-full md:p-0  md:bg-blue-300/10 md:flex md:justify-end md:pr-10 xl:w-[46rem] xl:pr-16 md__translate z-20">
                 <ul
                     class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 md:flex-row md:items-end  md:mt-0 md:w-fit md md:h-24  xl:gap-12 ">
 
                     <li class="menu__bar ">
-                        <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span class="text__number  "
+                        <a href="./index.html" class=" text__menu "><span class="text__number  "
                                 aria-hidden="true">00</span>
                             home</a>
                     </li>
-                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
+                    <li class="menu__bar ">
                         <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
                                 class="text__number" aria-hidden="true">01</span> Destination</a>
                     </li>
-                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
+                    <li class="menu__bar ">
                         <a href="./crew-commander.html" target="_blank" class="text__menu "><span class="text__number"
                                 aria-hidden="true">02</span> Crew</a>
                     </li>
-                    <li class="menu__bar md:border-b-3 md:border-b-transparent">
+                    <li class="menu__bar ">
                         <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
                                 class="text__number" aria-hidden="true">03</span> Technology</a>
                     </li>
@@ -77,8 +77,8 @@
                 </picture>
             </div>
         </header>
-        <section class="w-clampDestNav grid gap-6 xl:w-[27.813rem] xl:gap-10">
-            <ul class="peer flex items-center justify-around gap-8 md:justify-center xl:justify-start">
+        <section class="w-clampDestNav grid gap-6 xl:w-[27.813rem] xl:gap-10 ">
+            <ul class="peer flex items-center justify-around gap-8 md:justify-center xl:justify-start ">
                 <li class="item__moon">
                     <button class="text__moon" aria-selected="false" data-destination="Moon">moon</button>
                 </li>
@@ -86,7 +86,7 @@
                     <button class="text__moon" aria-selected="false" data-destination="Mars">mars</button>
                 </li>
                 <li class="item__moon active ">
-                    <button class="text__moon" aria-selected="true" data-destination="Europa">europa</button>
+                    <button class="text__moon " aria-selected="true" data-destination="Europa">europa</button>
                 </li>
                 <li class="item__moon">
                     <button class="text__moon" aria-selected="false" data-destination="Titan">titan</button>

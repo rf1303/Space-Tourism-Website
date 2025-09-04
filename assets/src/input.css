@@ -102,7 +102,6 @@
     --spacing-imgCreww: clamp(16.9375rem, 6.4476rem + 44.757vw, 27.875rem);
     --spacing-imgTecn: clamp(16.125rem, 10.1907rem + 25.3197vw, 22.3125rem);
 
-
 }
 
 html {
@@ -226,25 +225,32 @@ body {
     @apply translate-0 w-64 h-dvh
 }
 
-
 .menu__bar {
-    @apply w-full md:border-b-3 md:border-b-transparent hover:border-r-3 hover:border-white/30 md:w-fit md:h-full md:flex md:items-center md:justify-center md:hover:border-r-0 md:hover:border-b-3;
-}
-
-.menu__bar--active {
-    border-right: 3px;
-    border-color: white;
-}
-
-@media (min-width: 47.875em) {
-    .menu__bar--active {
-        border-right: 0;
-        border-bottom: 3px;
-    }
+    @apply w-full transition-all duration-200 ease-in md:border-b-3 md:border-b-transparent hover:border-r-4 hover:border-white/30 md:w-fit md:h-full md:flex md:items-center md:justify-center md:hover:border-r-0 md:hover:border-b-4;
+    position: relative;
 }
 
 .text__menu {
-    @apply text-base text-blue-300 uppercase cursor-pointer
+    @apply w-full text-base text-blue-300 uppercase cursor-pointer;
+}
+
+.text__menu[aria-current="page"]::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1%;
+    inline-size: 100%;
+    block-size: .188rem;
+    background-color: #fff;
+}
+
+@media (max-width: 45.875em) {
+    .text__menu[aria-current="page"]::after {
+        inline-size: .188rem;
+        block-size: 100%;
+        bottom: 0;
+        left: 97%; 
+    }
 }
 
 .text__number {
@@ -256,26 +262,23 @@ body {
 }
 
 .text__moon {
-     @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer 
+    @apply text-base/[1] tracking-wider font-barlowCond text-blue-300 uppercase cursor-pointer
 }
+
 .text__moon[aria-selected="true"] {
-  position: relative;
+    position: relative;
+    z-index: 0;
 }
 
 .text__moon[aria-selected="true"]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -100%; /* espacio bajo el texto */
-  width: 100%;
-  height: 2px;
-  background: white; /* o el color que quieras */
-}
-
-
-.active {
-    border-bottom: 3px ;
-    color: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    inline-size: 100%;
+    height: .188rem;
+    background: white;
+    z-index: 0;
 }
 
 .item__dots {

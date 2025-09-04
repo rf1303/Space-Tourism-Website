@@ -11,8 +11,7 @@ textMoon.forEach(btn => {
         });
 
         btn.setAttribute('aria-selected', 'true');
-        btn.parentElement.classList.add("active");
-
+        /* btn.parentElement.classList.add("active"); */
         const dataName = btn.dataset.destination;
 
         (async () => {

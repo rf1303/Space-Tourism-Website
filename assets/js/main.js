@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const href = e.getAttribute("href").split("/").pop();
         if (href === currentPage) {
             e.setAttribute('aria-current', 'page');
-            e.closest("li").classList.add('menu__bar--active');
         } else {
             console.log('No corresponde', href);
         }
