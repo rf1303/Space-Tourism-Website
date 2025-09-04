@@ -14,14 +14,6 @@
     --ff-barlow: 'barlow', system-ui, sans-serif;
     --ff-barlowCond: 'barlowCondensed', system-ui, sans-serif;
     --ff-bellefair: 'bellefair', system-ui, sans-serif;
-    --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs500: 1.75rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-200: .875rem;
 }
 
 @font-face {
@@ -195,13 +187,6 @@ body {
 .btn__label {
     z-index: 50;
 }
-
-/* .btn__label:focus-visible { */
-/*     .line { */
-/*         border: 1px solid #fff; */
-/*         box-shadow: 0 0 0 1px #242a45; */
-/*     } */
-/* } */
 
 .top {
     transform: rotate(45deg);

@@ -1140,14 +1140,6 @@
   --ff-barlow: 'barlow', system-ui, sans-serif;
   --ff-barlowCond: 'barlowCondensed', system-ui, sans-serif;
   --ff-bellefair: 'bellefair', system-ui, sans-serif;
-  --fs-900: 9.375rem;
-  --fs-800: 6.25rem;
-  --fs-700: 3.5rem;
-  --fs-600: 2rem;
-  --fs500: 1.75rem;
-  --fs-400: 1.125rem;
-  --fs-300: 1rem;
-  --fs-200: .875rem;
 }
 @font-face {
   font-family: 'bellefair';
