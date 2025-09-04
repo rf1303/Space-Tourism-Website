@@ -24,7 +24,7 @@ export const dataCrew = async (dataName) => {
     
     const crews = await dataSpace("crew");
     console.log('crews: ',crews[dataName]);
-    if (!dataCrew) return;
+    if (!crews) return;
 
     const dataTitle = document.getElementById('data__name');
     const dataRole = document.getElementById('data__role');

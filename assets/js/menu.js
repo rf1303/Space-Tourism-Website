@@ -20,12 +20,12 @@ btnMenu.addEventListener('click', () => {
         lineButton[2].classList.add('bottom');
     }
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && btnMenu.getAttribute('aria-expanded') === 'true') {
-            btnMenu.click();
-        }
-    });
+});
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && btnMenu.getAttribute('aria-expanded') === 'true') {
+        btnMenu.click();
+    }
 });
 
 window.addEventListener("resize", () => {

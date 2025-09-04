@@ -11,7 +11,6 @@ textMoon.forEach(btn => {
         });
 
         btn.setAttribute('aria-selected', 'true');
-        /* btn.parentElement.classList.add("active"); */
         const dataName = btn.dataset.destination;
 
         (async () => {
@@ -23,10 +22,9 @@ textMoon.forEach(btn => {
 export const dataDestination = async (dataName) => {
 
     const destinations = await dataSpace("destinations");
-    if (!dataDestination) return;
+    if (!destination) return;
 
     const destination = destinations.find(d => d.name.toLowerCase() === dataName.toLowerCase());
-    console.log('Name dataJson:', destination);
     if (!destination) {
         console.warn('Destino no encontrado', dataName);
     }

@@ -24,7 +24,7 @@ export const dataTechn = async (dataName) => {
     
     const technologys = await dataSpace("technology");
     console.log('technologys: ',technologys[dataName]);
-    if (!dataTechn) return;
+    if (!technologys) return;
 
     const dataTitle = document.getElementById('data__name');
     const dataImg = document.getElementById('data__img');
