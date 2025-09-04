@@ -1354,9 +1354,12 @@ body {
   height: calc(var(--spacing) * 8);
   width: fit-content;
   align-items: flex-start;
-  border-bottom-style: var(--tw-border-style);
-  border-bottom-width: 3px;
-  border-bottom-color: transparent;
+  &:hover {
+    @media (hover: hover) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 3px;
+    }
+  }
   &:hover {
     @media (hover: hover) {
       border-bottom-color: color-mix(in srgb, #fff 20%, transparent);
@@ -1377,7 +1380,7 @@ body {
   text-transform: uppercase;
 }
 .active {
-  border-bottom: 2px;
+  border-bottom: 3px !important;
   border-color: white;
 }
 .item__dots {
