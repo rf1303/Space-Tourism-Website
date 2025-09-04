@@ -12,7 +12,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -58,7 +57,6 @@
     --spacing-mainDesktop: 39.5rem;
     --spacing-exploreXs: 23.875rem;
     --spacing-exploreSm: 17rem;
-    --spacing-menuH: clamp(2rem, 6vw, 5rem);
     --spacing-dotsXl: .938rem;
     --spacing-imgCrewH: clamp(21.25rem, 13.8771rem + 31.4578vw, 28.9375rem);
     --spacing-imgCreww: clamp(16.9375rem, 6.4476rem + 44.757vw, 27.875rem);
