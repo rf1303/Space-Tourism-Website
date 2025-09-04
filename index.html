@@ -11,8 +11,8 @@
 
     <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body
-    class="bg__home">
+
+<body class="bg__home">
     <header class=" relative p-6 flex justify-between items-center md:py-0 md:pl-10 md:pr-0 xl:mt-10 xl:pl-16">
         <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
@@ -27,7 +27,7 @@
         <div class="hidden w-full xl:flex xl:translate-x-14 items-center justify-center z-50">
             <span class=" w-full h-px bg-white/35"></span>
         </div>
-        <section class="md:h-24 ">
+        <div class="md:h-24 ">
             <button id="btn__menu" type="button"
                 class="btn__label relative peer w-6 grid grid-cols-1 gap-1  z-30 cursor-pointer group md:w-px md:h-px md:opacity-0 "
                 aria-label="open and close menu Mobile" aria-expanded="false" aria-controls="main__nav">
@@ -41,27 +41,33 @@
                     class="mt-33 w-full h-fit flex flex-col items-center justify-items-start gap-8 md:flex-row md:items-end  md:mt-0 md:w-fit md md:h-24  xl:gap-12 ">
 
                     <li class="menu__bar ">
-                        <a href="./index.html" class=" text__menu letter-spacing-3 flex "><span
+                        <a href="./index.html" class=" text__menu " rel="noopener noreferrer"><span
                                 class="text__number " aria-hidden="true">00</span>
-                            home</a>
+                            home <span class="sr-only">(opens in a new tab)</span> </a>
                     </li>
                     <li class="menu__bar ">
-                        <a href="./destination-europa.html" target="_blank" class=" text__menu "><span
-                                class="text__number" aria-hidden="true">01</span> Destination</a>
+                        <a href="./destination-europa.html" target="_blank" rel="noopener noreferrer"
+                            class=" text__menu "><span class="text__number" aria-hidden="true">01</span> Destination
+                            <span class="sr-only">(opens in a new tab)</span>
+                        </a>
                     </li>
                     <li class="menu__bar ">
-                        <a href="./crew-commander.html" target="_blank" class="text__menu "><span
-                                class="text__number">02</span> Crew</a>
+                        <a href="./crew-commander.html" target="_blank" rel="noopener noreferrer"
+                            class="text__menu "><span class="text__number">02</span> Crew
+                            <span class="sr-only">(opens in a new tab)</span>
+                        </a>
                     </li>
                     <li class="menu__bar ">
-                        <a href="./technology-vehicle.html" target="_blank" class="text__menu "><span
-                                class="text__number" aria-hidden="true">03</span> Technology</a>
+                        <a href="./technology-vehicle.html" target="_blank" rel="noopener noreferrer"
+                            class="text__menu "><span class="text__number" aria-hidden="true">03</span> Technology
+                            <span class="sr-only">(opens in a new tab)</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
-    <main class="md:my-32 ">
+    <main class="md:my-32 xl:my-0 ">
 
         <div
             class="w-clampMain h-mainMobile py-6 mx-auto  grid grid-cols-1 items-center justify-items-center md:h-mainTablet xl:p-0  xl:h-mainDesktop xl:gap-12 xl:grid-cols-[repeat(2,_minmax(0,33.75rem))] xl:justify-between xl:items-end ">
@@ -79,10 +85,11 @@
                     because we’ll give you a truly out of this world experience!
                 </p>
             </div>
-            <div class="w-full h-exploreXs md:h-exploreSm grid items-center justify-items-center xl:justify-items-end z-0 ">
-                <a href="./destination-europa.html" target="_blank"
+            <div
+                class="w-full h-exploreXs md:h-exploreSm grid items-center justify-items-center xl:justify-items-end z-0 ">
+                <a href="./destination-europa.html" target="_blank" rel="noopener noreferrer"
                     class="relative p-9 aspect-square bg-blue-300 flex items-center justify-center rounded-full text-blue-900 text-explore uppercase font-bellefair md:w-exploreSm after:absolute after:content-[''] after:w-full after:h-full after:bg-white/20 after:rounded-full after:transition-transform after:duration-500 after:ease-in-out after:animate-spin hover:after:scale-150 focus:after:scale-150 ">
-                    Explore
+                    Explore <span class="sr-only">Europa</span>
                 </a>
             </div>
         </div>
