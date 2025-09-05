@@ -36,14 +36,13 @@ export const dataDestination = async (dataName) => {
     const dataDistance = document.getElementById('data__distance');
     const dataTravel = document.getElementById('data__travel');
 
-    dataTitle.textContent = destination.name;
-    dataDescription.textContent = destination.description;
-    dataDistance.textContent = destination.distance;
-    dataTravel.textContent = destination.travel;
-    dataImg.src = destination.images.webp;
-    imgWebp.src = destination.images.webp;
-    imgPng.src = destination.images.png;
-
+    dataTitle.textContent = destination?.name || 'Unknown destination';
+    dataDescription.textContent = destination?.description || 'No description available';
+    dataDistance.textContent = destination?.distance || 'N/A';
+    dataTravel.textContent = destination?.travel || 'N/A';
+    dataImg.src = destination?.images?.webp || 'default-image.webp';
+    imgWebp.src = destination?.images?.webp || 'default-image.webp';
+    imgPng.src = destination?.images?.png || 'default-image.png';
 
 
 };

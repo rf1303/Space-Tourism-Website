@@ -23,9 +23,14 @@ btnDots.forEach(btn => {
 export const dataCrew = async (dataName) => {
 
     const crews = await dataSpace("crew");
-    console.log('crews: ', crews[dataName]);
-    if (!crews) return;
-
+    // if (!crews?.[dataName]) {
+    //     console.error(`Crew "${dataName}" not found`);
+    //     return;
+    // }
+    if (!crews || !dataName || !(dataName in crews)) {
+        console.warn('Invalid dataName or crews object missing');
+        return;
+    }
     const dataTitle = document.getElementById('data__name');
     const dataRole = document.getElementById('data__role');
     const dataImg = document.getElementById('data__img');
@@ -33,19 +38,13 @@ export const dataCrew = async (dataName) => {
     const imgWebp = document.getElementById('img__webp');
     const dataBio = document.getElementById('data__bio');
 
-    // dataTitle.textContent = crews[dataName].name;
-    // dataRole.textContent = crews[dataName].role;
-    // dataBio.textContent = crews[dataName].bio;
-    // dataImg.src = crews[dataName].images.webp;
-    // imgWebp.src = crews[dataName].images.webp;
-    // imgPng.src = crews[dataName].images.png;
-
+    
     dataTitle.textContent = crews[dataName]?.name || "Unknown Crew Member";
     dataRole.textContent = crews[dataName]?.role || "";
     dataBio.textContent = crews[dataName]?.bio || "";
-    dataImg.src = crews[dataName]?.images?.webp || "default.webp";
-    imgWebp.src = crews[dataName]?.images?.webp || "default.webp";
-    imgPng.src = crews[dataName]?.images?.png || "default.png";
+    dataImg.src = crews[dataName]?.images?.webp || "../images/crew/image-victor-glover.webp";
+    imgWebp.src = crews[dataName]?.images?.webp || "../images/crew/image-victor-glover.webp";
+    imgPng.src = crews[dataName]?.images?.png || "../images/crew/image-victor-glover.png";
 
 };
 
