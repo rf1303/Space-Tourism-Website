@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const href = e.getAttribute("href").split("/").pop();
         if (href === currentPage) {
             e.setAttribute('aria-current', 'page');
-        } else {
+
             console.log('No corresponde', href);
         }
     });
